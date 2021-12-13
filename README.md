@@ -42,7 +42,9 @@ I also created a boxplot representation of the Chihuahua distribution across dis
 # What is the most popular dog color in each district?
 ### This question required more cleaning of the color column than the dog breed question did. There were many entries where the color was listed as a mix, or as a light/dark color, such as beige/weiss (beige/white) or dunkelbraun (dark brown). I decided that in order to reduce the number of color categories, to simply take the main color listed. So for mixed colors, I took the first one listed. For the colors with light or dark, I removed the modifier. There were also a couple where some entries were listed in English instead of German - here I switched as many as I could to the German equivalent, since most of the datatset was in German.
 
-I used the formula =IF(ISNUMBER(SEARCH("schwarz/", M2)), "schwarz",  M2), with variations to the color and column to produce the data I wanted. I ended up having to use this formula over 15 times to switch out all the various combinations of colors and symbols used in the entries. Still there were a few categories left with only 2 or 3 entries, which I decided to leave as is since I couldn't decide which main color category they belonged in. 
+I used the formula 
+=IF(ISNUMBER(SEARCH("schwarz/", M2)), "schwarz",  M2)
+with variations to the color and column to produce the data I wanted. I ended up having to use this formula over 15 times to switch out all the various combinations of colors and symbols used in the entries. Still there were a few categories left with only 2 or 3 entries, which I decided to leave as is since I couldn't decide which main color category they belonged in. 
 
 I then used a pivot table to make a similar table to the one for the top dog breeds. I have included the top 10 dog colors for each district in the picture below.
 
