@@ -34,10 +34,12 @@ Here is the bar chart that displays the top counts of hybrids by breed.
 
 Mischling klein and Chihuahua take the top spot in every district, with the Labrador Retreiver making appearances in a few districts in second place.
 
-I also created a boxplot representation of the Chihuahua distribution across districts. 
+I also created a boxplot representation of the Chihuahua distribution across districts, as well as the Tukey Five Number Summary. 
 ## ADD MISHLING KLEIN DISTRIBUTION
 
 ![image](https://user-images.githubusercontent.com/91508008/145884549-8519cb61-d15f-4197-bf44-f7d920a656fa.png)
+![image](https://user-images.githubusercontent.com/91508008/145890210-3bc7cb18-301b-41c2-8cc8-5fa5856c722f.png)
+
 
 # What is the most popular dog color in each district?
 ### This question required more cleaning of the color column than the dog breed question did. There were many entries where the color was listed as a mix, or as a light/dark color, such as beige/weiss (beige/white) or dunkelbraun (dark brown). I decided that in order to reduce the number of color categories, to simply take the main color listed. So for mixed colors, I took the first one listed. For the colors with light or dark, I removed the modifier. There were also a couple where some entries were listed in English instead of German - here I switched as many as I could to the German equivalent, since most of the datatset was in German.
@@ -53,7 +55,14 @@ I then used a pivot table to make a similar table to the one for the top dog bre
 ![top color district1](https://user-images.githubusercontent.com/91508008/145887418-91e9455b-a11a-4416-a2c3-6da02d6e9cd9.JPG)
 ![top color district2](https://user-images.githubusercontent.com/91508008/145887440-4de199d2-c9be-4c29-bdaf-5da3c48ccff1.JPG)
 
-Schwarz, braun, and weiss (black, brown, and white) take the top three spots, with a bit of switching in position for the latter two. Tricolor, beige, rot, and grau follow the top three in every district in varying positions.
+Schwarz, braun, and weiss (black, brown, and white) take the top three spots, with a bit of switching in position for the latter two. Tricolor, beige, rot, and grau follow the top three in every district in varying positions. Here I have created boxplots for the top three color distributions, along with their Tukey Five Number Summary.
+
+![image](https://user-images.githubusercontent.com/91508008/145889554-7d4d4efd-6de7-4686-bee0-83c9673dddcd.png)
+![image](https://user-images.githubusercontent.com/91508008/145889575-6cbccb06-289b-4da1-b5db-3dbdf9b89769.png)
+![image](https://user-images.githubusercontent.com/91508008/145889589-119d61da-561e-4195-ac96-11b5da7cb8b4.png)
+![image](https://user-images.githubusercontent.com/91508008/145890067-e856cbb4-3f69-4cd0-99f0-55d789bde680.png)
+
+
 
 
 
