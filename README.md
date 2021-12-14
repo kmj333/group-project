@@ -25,6 +25,8 @@ Here is the bar chart that displays the top counts of hybrids by breed.
 
 
 # *insert Karen's work*
+![image](https://github.com/kmj333/group-project/blob/main/agedist.png)
+
 # *insert Janani's work*
 # What is the most popular primary breed in each district?
 ### I started by checking for mispellings and other errors in the primary breed column and fixed them. I then used a pivot table to sort the count of each dog breed by district, and then order them from most to least numerically. I adjusted this pivot table a bit and transferred it to another Excel sheet to produce the following dataset. The picture below shows only the top ten breeds in each district. 
