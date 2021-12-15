@@ -36,10 +36,10 @@ Here is the bar chart that displays the top counts of hybrids by breed.
 
 Mischling klein and Chihuahua take the top spot in every district, with the Labrador Retreiver making appearances in a few districts in second place.
 
-### I also created a boxplot representation of the Chihuahua distribution across districts, as well as the Tukey Five Number Summary. 
-## ADD MISHLING KLEIN DISTRIBUTION
+### I also created a boxplot representation of the Chihuahua and Mischling klein distributions across districts, as well as their Tukey Five Number Summaries. 
 
 ![image](https://user-images.githubusercontent.com/91508008/145884549-8519cb61-d15f-4197-bf44-f7d920a656fa.png)
+![image](https://user-images.githubusercontent.com/91508008/146235179-d3814ed9-59a0-4a4f-a1fe-fcf36d2ceed8.png)
 ![image](https://user-images.githubusercontent.com/91508008/145890210-3bc7cb18-301b-41c2-8cc8-5fa5856c722f.png)
 
 
