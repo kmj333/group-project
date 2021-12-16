@@ -1,4 +1,4 @@
-# group-project
+# DATA 115 Group Project - Dogs in Zurich
 ```
 https://www.kaggle.com/kmader/dogs-of-zurich/version/2?select=20170308hundehalter.csv
 ```
@@ -36,8 +36,6 @@ Here is the bar chart that displays the top counts of hybrids by breed.
 
 
 
-# *insert Karen's work*
-
 #Is there a correlaton between the ages of dogs and their owners?
 I began by cleaning the dataset, solely focusing on the "Owner.Age" and "Dog.Age" columns to make my analysis. I ran checks throguh both of these columns using the UNIQUE, MIN, and MAX functions.I found that the "Owner.Age" column had inconsistency issues, with about 20 cells that had "Nov-20". I was unsure of the meaning of the date, and it was only 20 cells, so I decided to delete the entire rows. The "Birth Year" column was clean, but the format was not in age year format so I made a new "Age" column by subtracting the Birth Year from 2021. 
 
@@ -54,7 +52,6 @@ I proceeded to make boxplots to see the correlation between the ages of dogs and
 
 ![image](https://github.com/kmj333/group-project/blob/main/boxplotpets.png)
 
-# *insert Janani's work*
 # What is the most popular primary breed in each district?
 ### I started by checking for mispellings and other errors in the primary breed column and fixed them. I then used a pivot table to sort the count of each dog breed by district, and then order them from most to least numerically. I adjusted this pivot table a bit and transferred it to another Excel sheet to produce the following dataset. The picture below shows only the top ten breeds in each district. 
 
