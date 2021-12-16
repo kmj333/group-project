@@ -1,5 +1,17 @@
 # group-project
-# *insert Anna's work*
+```
+https://www.kaggle.com/kmader/dogs-of-zurich/version/2?select=20170308hundehalter.csv
+```
+# Is there a way to predict for the dog's gender?
+## I performed a logistic regression and constructed a barplot and quickly realized there would not be a strong correlation between any of the variables and the dog's gender. Still I performed these methods for primary dog breed and birth year as well. The most accurate model was using the top 10 most popular primary dog breeds to predict for the gender of the dog, but it still only accurately predicted 53.6% of the data.
+## Owner's Gender
+![image](https://user-images.githubusercontent.com/67665228/146434134-2f0f52bf-8a6c-48b4-8110-42fa6e1a9111.png)
+
+## Primary Dog Breed
+![image](https://user-images.githubusercontent.com/67665228/146434099-8e6bcd98-a1f5-492c-9062-2e3b36e00df1.png)
+
+## Birth Year
+![image](https://user-images.githubusercontent.com/67665228/146433955-69c855fd-d0db-43cf-9d3d-09bfbdd3811e.png)
 
 # What is the most popular primary breed?
 ### I started cleaning by first making sure there were no duplicates or misspellings. I decided to keep the data set in German because translation wasn't critical in increasing the efficacy of my research. I started by making a pivot table of all the breeds represented so I could see the overall data that I was working with. Overall I was working with 304 breeds. 
