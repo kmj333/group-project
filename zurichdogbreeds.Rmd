@@ -1,0 +1,42 @@
+---
+title: "Final Project Data 115"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+
+```{r load}
+library(tidyverse)
+library(readxl)
+library(GGally)
+dogbreeddataset <- read_excel("Downloads/dogbreeddataset.xlsx")
+view(dogbreeddataset)
+dogbreeddataset <- read_excel("Downloads/dogbreeddataset.xlsx")
+dogbreeddataset$mix = factor(dogbreeddataset$`PRIMARY HYBRID`)
+data2<-subset(dogbreeddataset, `PRIMARY BREED`=="Mischling klein"|`PRIMARY BREED`=="Chihuahua"|`PRIMARY BREED`=="Labrador Retriever"| `PRIMARY BREED`=="Yorkshire Terrier"|`PRIMARY BREED`=="Jack Russell Terrier"|`PRIMARY BREED`=="Französische Bulldogge"|`PRIMARY BREED`=="Mischling gross"| `PRIMARY BREED`=="Malteser"| `PRIMARY BREED`=="Mops"|`PRIMARY BREED`=="Golden Retriever")
+head(data2)
+```
+```{r graphics}
+ggplot(data = data2, mapping = aes(x=`PRIMARY BREED`,y=mix)) + 
+  geom_col()
+ggplot(data2, aes(x = `PRIMARY BREED`)) +
+  geom_bar()
+ggplot(data2, aes(x = `PRIMARY BREED`, fill=`PRIMARY HYBRID`)) +
+  geom_bar()
+
+```
+make graphics for second question
+```{r second}
+data3<- subset(dogbreeddataset, `PRIMARY HYBRID`=="Mischling")
+head(data3)
+ggplot(data3, aes(x = `PRIMARY BREED`)) +
+  geom_bar()
+data4<-subset(data3, `PRIMARY BREED`=="Labrador Retriever"| `PRIMARY BREED` == "Terrier" | `PRIMARY BREED` == "Schäfer" |`PRIMARY BREED` == "Jack Russell Terrier" |`PRIMARY BREED` == "Pinscher" |`PRIMARY BREED` == "Appenzeller" |`PRIMARY BREED` == "Podenco" |`PRIMARY BREED` == "Border Collie" |`PRIMARY BREED` == "Malteser" |`PRIMARY BREED` == "Pekingese")
+
+ggplot(data4, aes(x = `PRIMARY BREED`)) +
+  geom_bar()
+dog_log <- glm (as.factor(`PRIMARY HYBRID`) ~ `PRIMARY BREED`, data = dogbreeddataset,family = binomial )
+summary(dog_log)
+```
+
