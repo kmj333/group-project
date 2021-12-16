@@ -25,6 +25,21 @@ Here is the bar chart that displays the top counts of hybrids by breed.
 
 
 # *insert Karen's work*
+
+#Is there a correlaton between the ages of dogs and their owners?
+I began by cleaning the dataset, solely focusing on the "Owner.Age" and "Dog.Age" columns to make my analysis. I ran checks throguh both of these columns using the UNIQUE, MIN, and MAX functions.I found that the "Owner.Age" column had inconsistency issues, with about 20 cells that had "Nov-20". I was unsure of the meaning of the date, and it was only 20 cells, so I decided to delete the entire rows. The "Birth Year" column was clean, but the format was not in age year format so I made a new "Age" column by subtracting the Birth Year from 2021. 
+
+I then proceeded to import the dataset into R Studio where I made a histogram, barplot, and boxplots.
+
+I made a histogram to display the age range of the dogs to visualize where most of the ages lied.
+![image](https://github.com/kmj333/group-project/blob/main/agedist.png)
+
+I proceeded to make a barplot to display the age range of the owners to visualize the distributions of ages.
+
+![image](https://github.com/kmj333/group-project/blob/main/agedist.png)
+
+I proceeded to make boxplots to see the correlation between the ages of dogs and their owners and by the boxplots shown below we can see that there is a strong positive correlation.
+
 ![image](https://github.com/kmj333/group-project/blob/main/agedist.png)
 
 # *insert Janani's work*
@@ -41,12 +56,6 @@ Mischling klein and Chihuahua take the top spot in every district, with the Labr
 ![image](https://user-images.githubusercontent.com/91508008/145884549-8519cb61-d15f-4197-bf44-f7d920a656fa.png)
 ![image](https://user-images.githubusercontent.com/91508008/146235179-d3814ed9-59a0-4a4f-a1fe-fcf36d2ceed8.png)
 ![image](https://user-images.githubusercontent.com/91508008/145890210-3bc7cb18-301b-41c2-8cc8-5fa5856c722f.png)
-
-I also retreived the Tukey Five Number Summary for the percentages of the top dog breed (total, Mischling klein and Chihuahua). District 12 was an outlier in the total and Chihuahua distributions, having 14.3% of its dogs as the top breed. District 3 was an outlier in the Mischling klein distribution, having 11.3% of its dogs as the top breed.
-
-
-![image](https://user-images.githubusercontent.com/91508008/146298637-d598dd6f-7c57-4678-99d1-e3cc45f6ab08.png)
-![image](https://user-images.githubusercontent.com/91508008/146298657-3706962c-2b60-46bd-9589-e998e057d94d.png)
 
 
 # What is the most popular dog color in each district?
