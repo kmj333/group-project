@@ -42,6 +42,12 @@ Mischling klein and Chihuahua take the top spot in every district, with the Labr
 ![image](https://user-images.githubusercontent.com/91508008/146235179-d3814ed9-59a0-4a4f-a1fe-fcf36d2ceed8.png)
 ![image](https://user-images.githubusercontent.com/91508008/145890210-3bc7cb18-301b-41c2-8cc8-5fa5856c722f.png)
 
+I also retreived the Tukey Five Number Summary for the percentages of the top dog breed (total, Mischling klein and Chihuahua). District 12 was an outlier in the total and Chihuahua distributions, having 14.3% of its dogs as the top breed. District 3 was an outlier in the Mischling klein distribution, having 11.3% of its dogs as the top breed.
+
+
+![image](https://user-images.githubusercontent.com/91508008/146298637-d598dd6f-7c57-4678-99d1-e3cc45f6ab08.png)
+![image](https://user-images.githubusercontent.com/91508008/146298657-3706962c-2b60-46bd-9589-e998e057d94d.png)
+
 
 # What is the most popular dog color in each district?
 ### This question required more cleaning of the color column than the dog breed question did. There were many entries where the color was listed as a mix, or as a light/dark color, such as beige/weiss (beige/white) or dunkelbraun (dark brown). I decided that in order to reduce the number of color categories, to simply take the main color listed. So for mixed colors, I took the first one listed. For the colors with light or dark, I removed the modifier. There were also a couple where some entries were listed in English instead of German - here I switched as many as I could to the German equivalent, since most of the datatset was in German.
