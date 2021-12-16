@@ -40,7 +40,7 @@ I proceeded to make a barplot to display the age range of the owners to visualiz
 
 I proceeded to make boxplots to see the correlation between the ages of dogs and their owners and by the boxplots shown below we can see that there is a strong positive correlation.
 
-![image](https://github.com/kmj333/group-project/blob/main/agedist.png)
+![image](https://github.com/kmj333/group-project/blob/main/boxplotpets.png)
 
 # *insert Janani's work*
 # What is the most popular primary breed in each district?
