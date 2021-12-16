@@ -2,7 +2,7 @@
 ```
 https://www.kaggle.com/kmader/dogs-of-zurich/version/2?select=20170308hundehalter.csv
 ```
-# Is there a way to predict for the dog's gender?
+# Q1: Is there a way to predict for the dog's gender?
 ## I performed a logistic regression and constructed a barplot and quickly realized there would not be a strong correlation between any of the variables and the dog's gender. Still I performed these methods for primary dog breed and birth year as well. The most accurate model was using the top 10 most popular primary dog breeds to predict for the gender of the dog, but it still only accurately predicted 53.6% of the data.
 ## Owner's Gender
 ![image](https://user-images.githubusercontent.com/67665228/146434134-2f0f52bf-8a6c-48b4-8110-42fa6e1a9111.png)
@@ -13,7 +13,7 @@ https://www.kaggle.com/kmader/dogs-of-zurich/version/2?select=20170308hundehalte
 ## Birth Year
 ![image](https://user-images.githubusercontent.com/67665228/146433955-69c855fd-d0db-43cf-9d3d-09bfbdd3811e.png)
 
-# What is the most popular primary breed?
+# Q2A: What is the most popular primary breed?
 ### I started cleaning by first making sure there were no duplicates or misspellings. I decided to keep the data set in German because translation wasn't critical in increasing the efficacy of my research. I started by making a pivot table of all the breeds represented so I could see the overall data that I was working with. Overall I was working with 304 breeds. 
 
 ### I then loaded the data into R studio to create visualizations for the data. Since 304 breeds made the data set too big to read in a graph axis, I decided to use the pivot table setting to find the top 10 breeds. The top ten breeds based off the pivot table were:
@@ -26,7 +26,7 @@ This is a bar graph that displays the counts of the top ten breeds from this dat
 This bar graph shows how much of the top ten breeds contain mixed breeds.
 ### As we can clearly see from the pivot table and the graphic above, the most popular primary breed is the Mischling Klein. 
 
-# What primary breed is the most popular to be mixed?
+# Q2B: What primary breed is the most popular to be mixed?
 ### First thing I did was use the "UNIQUE" function in excel to make sure "Mischling" was the only indication of mixed breeds in the "Primary Hybrid" column. Then I used the pivot table again but this time separated the primary breed row and sorted it by the number of hybrids in each breed by ascending order. Again, there was too many breeds so I had to cut it down to the top ten hybrid breeds:  
 <img width="399" alt="Screen Shot 2021-12-12 at 5 06 24 PM" src="https://user-images.githubusercontent.com/91634200/145737551-e8ccea3d-00a3-45c7-b52c-b98e4a2453ef.png">'
 ### Then in R studio, I did the same conversion for a new data set but this time with the hybrid filtering added into it.
@@ -36,7 +36,7 @@ Here is the bar chart that displays the top counts of hybrids by breed.
 
 
 
-#Is there a correlaton between the ages of dogs and their owners?
+# Q3: Is there a correlaton between the ages of dogs and their owners?
 I began by cleaning the dataset, solely focusing on the "Owner.Age" and "Dog.Age" columns to make my analysis. I ran checks throguh both of these columns using the UNIQUE, MIN, and MAX functions.I found that the "Owner.Age" column had inconsistency issues, with about 20 cells that had "Nov-20". I was unsure of the meaning of the date, and it was only 20 cells, so I decided to delete the entire rows. The "Birth Year" column was clean, but the format was not in age year format so I made a new "Age" column by subtracting the Birth Year from 2021. 
 
 I then proceeded to import the dataset into R Studio where I made a histogram, barplot, and boxplots.
@@ -52,7 +52,7 @@ I proceeded to make boxplots to see the correlation between the ages of dogs and
 
 ![image](https://github.com/kmj333/group-project/blob/main/boxplotpets.png)
 
-# What is the most popular primary breed in each district?
+# Q4A: What is the most popular primary breed in each district?
 ### I started by checking for mispellings and other errors in the primary breed column and fixed them. I then used a pivot table to sort the count of each dog breed by district, and then order them from most to least numerically. I adjusted this pivot table a bit and transferred it to another Excel sheet to produce the following dataset. The picture below shows only the top ten breeds in each district. 
 
 ![Top Breed in each District 1](https://user-images.githubusercontent.com/91508008/145883698-5d9d54dc-b491-4159-a193-c1b31b2e54cb.JPG)
@@ -67,7 +67,7 @@ Mischling klein and Chihuahua take the top spot in every district, with the Labr
 ![image](https://user-images.githubusercontent.com/91508008/145890210-3bc7cb18-301b-41c2-8cc8-5fa5856c722f.png)
 
 
-# What is the most popular dog color in each district?
+# Q4B: What is the most popular dog color in each district?
 ### This question required more cleaning of the color column than the dog breed question did. There were many entries where the color was listed as a mix, or as a light/dark color, such as beige/weiss (beige/white) or dunkelbraun (dark brown). I decided that in order to reduce the number of color categories, to simply take the main color listed. So for mixed colors, I took the first one listed. For the colors with light or dark, I removed the modifier. There were also a couple where some entries were listed in English instead of German - here I switched as many as I could to the German equivalent, since most of the datatset was in German.
 
 ### I used the formula 
