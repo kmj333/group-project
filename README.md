@@ -36,7 +36,7 @@ I made a histogram to display the age range of the dogs to visualize where most 
 
 I proceeded to make a barplot to display the age range of the owners to visualize the distributions of ages.
 
-![image](https://github.com/kmj333/group-project/blob/main/agedist.png)
+![image](https://github.com/kmj333/group-project/blob/main/barplotpets.png)
 
 I proceeded to make boxplots to see the correlation between the ages of dogs and their owners and by the boxplots shown below we can see that there is a strong positive correlation.
 
