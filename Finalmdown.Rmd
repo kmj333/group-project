@@ -1,0 +1,51 @@
+---
+title: "Final Project"
+author: "Karen Magana"
+date: "12/14/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+```
+
+## Owner and Dog Ages Dataset 
+
+```{r dogs}
+pets <- read.csv("cleanproject.csv")
+head(pets)
+
+```
+
+## Dog Ages Histogram
+
+```{r dog_agehist}
+
+ggplot( data= pets, aes(x=Dog.Age)) + 
+  geom_histogram(fill="orange", alpha=0.5) +
+  ggtitle("DOG AGE DISTRIBUTION") +
+  theme_minimal()
+
+```
+
+## Owner Ages Barplot
+
+```{r owner_agebar}
+
+barplot(table(pets$Owner.Age), col=rgb(0.8,0.1,0.1,0.6), xlab="Ages (years)",ylab="Count", main="Owner Ages")
+
+```
+
+## Ages Boxplots 
+
+```{r corboxplots}
+
+ggplot(pets, aes(x=Owner.Age, y=Dog.Age, fill=Owner.Age)) + 
+    geom_boxplot(alpha=0.3) +
+    theme(legend.position="none") +
+    scale_fill_brewer(palette="BuGn")+ggtitle("Correlation of Owner and Dog Ages")
+
+```
+
